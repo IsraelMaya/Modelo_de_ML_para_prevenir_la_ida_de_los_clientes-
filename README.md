@@ -31,7 +31,7 @@ Al operador de telecomunicaciones Interconnect le gustaría poder pronosticar su
 
 El modelo `LightGBM` fue mejor por muy poco que el modelo `CatBoost`, donde podemo ver que el valor **ROC AUC es de 0.93** con la base de datos de prueba, lo cual nos dice que a pesar de haber desequilibrio en nuestro `target`, el modelo puede predecir de manera muy eficiente la tasa de cancelación de clientes por sitinguir bien entre los verdaderos postivos y los falsos potivos, también, tenemos un valor de `Exactitud` del 0.88, que es alto debido al desequilibrio de clases, más un valor de `F1` de 0.76, que si bien no es alto, aún así nos dice que el modelo tienen un valor aceptable de Precission y Recall.
 
-En general los modelos, obtuvieron los siguientes resultados:
+Se muestra a continuación los resultados de los modelos utilizados y el valor de sus metricas tanto en la base de datos de entrenamiento como de pruebas:
 
 **LogisticRegressor**
 
