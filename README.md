@@ -31,4 +31,50 @@ Al operador de telecomunicaciones Interconnect le gustaría poder pronosticar su
 
 El modelo `LightGBM` fue mejor por muy poco que el modelo `CatBoost`, donde podemo ver que el valor **ROC AUC es de 0.93** con la base de datos de prueba, lo cual nos dice que a pesar de haber desequilibrio en nuestro `target`, el modelo puede predecir de manera muy eficiente la tasa de cancelación de clientes por sitinguir bien entre los verdaderos postivos y los falsos potivos, también, tenemos un valor de `Exactitud` del 0.88, que es alto debido al desequilibrio de clases, más un valor de `F1` de 0.76, que si bien no es alto, aún así nos dice que el modelo tienen un valor aceptable de Precission y Recall.
 
+En general los modelos, obtuvieron los siguientes resultados:
+
+**LogisticRegressor**
+
+|  Métrica | Train  |Test   |
+| ------------ | ------------ | ------------ |
+|Exactitud |  0.81 | 0.81|
+|    F1        |  0.59 | 0.59|
+|   PR         | 0.68 | 0.67|
+|ROC AUC  |   0.86 | 0.85|
+
+ **DecisionTreeClassifier**
+
+ |  Métrica | Train  |Test   |
+| ------------ | ------------ | ------------ |
+|Exactitud |  0.96 | 0.82|
+|F1 |   0.91 | 0.66|
+|PR |   0.98 | 0.62|
+|ROC AUC |    0.99 | 0.80|
+
+**RandomForestClassifier**
+
+|  Métrica | Train  |Test   |
+| ------------ | ------------ | ------------ |
+|Exactitud |  0.86 | 0.82|
+|F1 |   0.71 | 0.62|
+|PR |   0.85 | 0.76|
+|ROC AUC |    0.93 | 0.88|   
+    
+**LightGBM Regressor**
+
+|  Métrica | Train  |Test   |
+| ------------ | ------------ | ------------ |
+|Exactitud |  0.96 | 0.90|
+|F1 |   0.92 | 0.79|
+|PR |   0.98 | 0.89|
+|ROC AUC |    0.99 | 0.93|   
+
+**CatBoost Regressor**
+
+|  Métrica | Train  |Test   |
+| ------------ | ------------ | ------------ |
+|Exactitud |  0.94 | 0.88|
+|F1 |   0.88 | 0.76|
+|PR |   0.96 | 0.88|
+|ROC AUC |    0.98 | 0.93|  
 
